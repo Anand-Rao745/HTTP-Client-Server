@@ -15,7 +15,6 @@ serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serverSocket.bind((serverIP, serverPort))
 serverSocket.listen(1)
 
-
 while True:
     connectionSocket, address = serverSocket.accept()
     data = connectionSocket.recv(dataLen).decode()

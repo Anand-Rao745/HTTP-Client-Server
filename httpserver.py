@@ -37,5 +37,7 @@ while True:
         elif lastmodfile<lastmodcache:
             response= "HTTP/1.1 304 Not Modified"+ "\\r\\n\n" + "Date: " + currentdate + "\\r\\n\n" + "\\r\\n"
 
-
     connectionSocket.send(response.encode())
+
+    
+    

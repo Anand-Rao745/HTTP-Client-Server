@@ -27,7 +27,7 @@ clientSocket.connect((host, int(port)))
 clientSocket.send(GET.encode())
 dataEcho = clientSocket.recv(12000).decode()  
 
-if"Last-Modified" in dataEcho:
+if "Last-Modified" in dataEcho:
     f=open("cache.txt", "w")
     f.write(filename+"\n")
     f.write(dataEcho)
